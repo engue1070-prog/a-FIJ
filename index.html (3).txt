@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pépinière Nizet - Herstal</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f6f6f6;
+  color: #222;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+  url('https://images.unsplash.com/photo-1466692476868-aef1dfb1e735') center/cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 52px;
+}
+
+.hero p {
+  max-width: 600px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 14px 22px;
+  background: #2f7d32;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+/* SECTIONS */
+section {
+  padding: 70px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  color: #2f7d32;
+  margin-bottom: 25px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+/* CARDS */
+.card, .review {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover, .review:hover {
+  transform: translateY(-5px);
+}
+
+/* IMAGES */
+.gallery img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* CONTACT */
+.contact {
+  background: #eee;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-top: 10px;
+  padding: 14px;
+  background: #2f7d32;
+  color: white;
+  border: none;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* FOOTER */
+footer {
+  background: #2f7d32;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Pépinière Nizet</h1>
+  <p>Plantes, jardins et aménagement extérieur à Herstal 🌿</p>
+  <a class="btn" href="tel:042640233">📞 Appeler maintenant</a>
+</div>
+
+<!-- ABOUT -->
+<section>
+  <h2>🌿 À propos</h2>
+  <p>
+    Entreprise familiale spécialisée dans les plantes, arbustes et création de jardins.
+    Conseils personnalisés pour chaque client.
+  </p>
+</section>
+
+<!-- SERVICES -->
+<section>
+  <h2>🌱 Services</h2>
+  <div class="grid grid-2">
+
+    <div class="card">🌿 Pépinière : plantes et fleurs</div>
+    <div class="card">🌳 Jardins : création complète</div>
+    <div class="card">✂️ Entretien : taille et élagage</div>
+    <div class="card">🚧 Clôtures : installation</div>
+
+  </div>
+</section>
+
+<!-- PHOTOS -->
+<section>
+  <h2>📸 Photos</h2>
+  <div class="grid grid-2 gallery">
+    <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
+    <img src="https://images.unsplash.com/photo-1468327768560-75b778cbb551">
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section>
+  <h2>⭐ Avis clients</h2>
+  <div class="grid grid-2">
+
+    <div class="review">★★★★★<br><strong>Jennifer Douillet</strong><br>Très bons conseils.</div>
+
+    <div class="review">★★★★★<br><strong>Nathalie Dieu</strong><br>Super qualité de plantes.</div>
+
+    <div class="review">★★★★★<br><strong>Alexandre Muls</strong><br>Service rapide.</div>
+
+    <div class="review">★★★★★<br><strong>Jean-Marie Vannerum</strong><br>Meilleure pépinière !</div>
+
+  </div>
+</section>
+
+<!-- MAP -->
+<section>
+  <h2>📍 Localisation</h2>
+  <iframe 
+    src="https://www.google.com/maps?q=Rue+Basse+Campagne+39+4040+Herstal&output=embed"
+    width="100%" height="300" style="border:0;border-radius:12px;">
+  </iframe>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+  <h2>📞 Contact</h2>
+
+  <p>📍 Rue Basse Campagne 39, 4040 Herstal</p>
+  <p>📞 04 264 02 33</p>
+
+  <form>
+    <input type="text" placeholder="Nom">
+    <input type="tel" placeholder="Téléphone">
+    <textarea placeholder="Message"></textarea>
+    <button>Envoyer</button>
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 Pépinière Nizet
+</footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/3242640233"
+style="
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+z-index:999;">
+💬 WhatsApp
+</a>
+
+</body>
+</html>
